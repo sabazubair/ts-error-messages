@@ -1,3 +1,12 @@
+// type RoutingConfig = {
+//   routes: {
+//     path: string;
+//     component: string;
+//   }[];
+// };
+
+// const createRoutes = (config: RoutingConfig) => {};
+
 const routingConfig = {
   routes: [
     {

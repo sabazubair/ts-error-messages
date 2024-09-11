@@ -7,5 +7,11 @@ const somethingDangerous = () => {
 try {
   somethingDangerous();
 } catch (error) {
-  console.log(error.message);
+  if (error instanceof Error) {
+    // Handle the expected type of error
+    console.log(error.message);
+  } else {
+    // Re-throw the error because it's unexpected
+    throw error;
+  }
 }
